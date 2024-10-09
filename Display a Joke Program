@@ -1,0 +1,10 @@
+joke = (" Why did the programmer quit his job?", "Because he didn't get arrays! ")
+
+def display_joke():
+    setup, punchline = joke  # Unpack the joke tuple
+    input(" Press Enter to see the punchline...")  # Wait for user input
+    print(setup)  # Display the setup
+    print(punchline)  # Display the punchline
+   
+
+print(display_joke())                                           

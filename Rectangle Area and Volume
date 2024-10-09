@@ -1,0 +1,14 @@
+def Rec_Area(width, height):
+  Area = width * height
+  return Area
+  
+width = int(input("Enter the width of the rectangle: "))
+height = int(input("Enter the height of the rectangle: "))
+length = int(input("Enter the length of the rectangle: "))
+print(Rec_Area(width, height))
+
+def Rec_Volume(Area, length)
+  Volume = Area * length
+  return Volume
+  
+print(Rec_Volume(Area, length))

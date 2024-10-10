@@ -1,0 +1,11 @@
+print("Enter you details in the following format DD/MM/YYYY")
+date_Old = input("Enter the date you were born in")
+month_Old = input("Enter the month you were born in")
+year_Old = input("Enter the year you were born in")
+date_New = input("Enter the present date ")
+month_New = input("Enter the present month ")
+year_New = input("Enter the present year ")
+def years_into_days(year_OLD, year_New):
+  years_converted= (year_New - year_OLD)
+  
+  

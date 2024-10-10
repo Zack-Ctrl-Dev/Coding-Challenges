@@ -1,0 +1,16 @@
+def Distance_Travelled(speed, time):
+  distance = speed * time
+  return distance
+  
+
+speed= float(input("Enter the speed the car is travelling at m/s"))
+time= float(input("Enter the time the car travels for in seconds"))
+print Distance_Travelled(speed, time)
+
+def Speed_Required(distance_input,time):
+  speed = distance_input / time
+  return speed
+  
+distance_input = float(input("Enter the distance you want to travel"))
+time_input= float(input("Enter the time the car has to travels in seconds"))
+print Speed_Required(distance_input,time_input)

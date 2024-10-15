@@ -1,0 +1,22 @@
+def calculate():
+  num1 = float(input("Enter your first number"))
+  num2 = float(input("Enter your second number"))
+  operation = input("What operation would you like to carry out? (+,-,*,/) ")
+  if operation == "+":
+    result= num1 + num2
+  elif operation == "-":
+    result = num1 - num2
+  elif operation == "*":
+    result = num1 * num2
+  elif operation == "/":
+    result = num1/num2
+  print(result)
+  
+calculate()
+
+calculator = input("Do you want to continue calculations? yes,no")
+if calculator == "yes":
+  calculate()
+    
+  
+ 

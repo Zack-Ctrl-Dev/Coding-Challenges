@@ -1,11 +1,26 @@
 print("Enter you details in the following format DD/MM/YYYY")
-date_Old = input("Enter the date you were born in")
-month_Old = input("Enter the month you were born in")
-year_Old = input("Enter the year you were born in")
-date_New = input("Enter the present date ")
-month_New = input("Enter the present month ")
-year_New = input("Enter the present year ")
-def years_into_days(year_OLD, year_New):
-  years_converted= (year_New - year_OLD)
+
+#Asks the user to input the client's date of birth
+date_Old = int(input("Enter the day you were born in"))
+month_Old = int(input("Enter the month you were born in"))
+year_Old = int(input("Enter the year you were born in"))
+
+#Asks the user to input the present date
+date_New = int(input("Enter the present day"))
+month_New = int(input("Enter the present month"))
+year_New = int(input("Enter the present year"))
+
+def years_into_days(year_OLD, year_New): #Converts the years into days
+  years_converted= (((year_New - year_Old)-1) * 365.25)
+  return years_converted
   
+def months_into_years(month_Old,month_New): #Converts the months into days
+  months_converted= ((12-month_Old) * 30)+(month_New * 30) #Assuming the average days in a month is 30(It's 30.4167 but rounded to the nearest integer for simpler calculations)
+  return months_converted
   
+def days_accounted_for(date_New,date_Old): #Accounts the remaining days
+  days_accounted= date_New - (30 - date_Old)
+  return days_accounted
+  
+T_Days_Lived = years_into_days(year_Old, year_New) + months_into_years(month_Old,month_New) + days_accounted_for(date_New,date_New)
+print T_Days_Lived

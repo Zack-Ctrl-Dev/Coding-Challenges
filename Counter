@@ -1,0 +1,12 @@
+counter = 0
+
+def increase_counter():
+    global counter  
+    counter += 1  
+    print("Counter is now equal to", counter)
+
+
+increase_counter()
+increase_counter()
+increase_counter()
+
